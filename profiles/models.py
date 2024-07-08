@@ -19,7 +19,7 @@ class Profile(models.Model):
     class Meta:
         ordering = ['-created_at']
 
-    def __repr__(self) -> str:
+    def __str__(self) -> str:
         return f"{self.owner}'s profile"
 
 
