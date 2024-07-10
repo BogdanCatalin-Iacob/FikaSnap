@@ -1,4 +1,4 @@
-from rest_framework import status
+from rest_framework import status, permissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Post
@@ -9,6 +9,8 @@ class PostList(APIView):
     '''
     List / Create posts
     '''
+    serializer_class = PostSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     def get(self, request):
         '''
