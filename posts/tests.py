@@ -22,3 +22,7 @@ class PostListViewTest(APITestCase):
         count = Post.objects.count()
         self.assertEqual(count, 1)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+    def test_logged_out_user_can_not_create_post(self):
+        response = self.client.post('/posts/', {'title': 'a second title'})
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
