@@ -10,6 +10,6 @@ class LieSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Like
-        fields =[
+        fields = [
             'id', 'created_at', 'owner',' post'
         ]
