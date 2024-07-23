@@ -1,4 +1,4 @@
-from rest_framework import generics,permissions
+from rest_framework import generics, permissions
 from .models import Like
 from .serializers import LikeSerializer
 
