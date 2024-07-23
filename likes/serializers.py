@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Like
 
 
-class LieSerializer(serializers.ModelSerializer):
+class LikeSerializer(serializers.ModelSerializer):
     '''
     Serializer for Like model
     '''
