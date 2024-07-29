@@ -9,7 +9,7 @@ class FollowerSerializer(serializers.ModelSerializer):
     Create method handles the unique constraint on 'owner' and 'followed'
     """
     owner = serializers.ReadOnlyField(source='owner.username')
-    followed = serializers.ReadOnlyField(source='followed.username')
+    followed_name = serializers.ReadOnlyField(source='followed.username')
 
     class Meta:
         model = Follower
