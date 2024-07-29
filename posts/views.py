@@ -2,17 +2,23 @@ from django.http import Http404
 from rest_framework import status, permissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import generics
+from fikasnap_api.permissions import IsOwnerOrReadOnly
 from .models import Post
 from .serializers import PostSerializer
-from fikasnap_api.permissions import IsOwnerOrReadOnly
 
 
-class PostList(APIView):
+class PostList(generics.ListCreateAPIView):
     '''
-    List / Create posts
+    List posts or create a post if logged in
+    The perform_create method associates the post with the logged in user.
     '''
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    queryset = Post.objects.all()
+
+    def perform_create(self, serializer):
+        return serializer.save(owner=self.request.user)
 
     def get(self, request):
         '''
