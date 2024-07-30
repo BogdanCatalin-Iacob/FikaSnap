@@ -44,7 +44,7 @@ This social media app allows users to create an account, connect, and share post
         | name | type | key | other |
         |------|------|-----|-------|
         | id | BigAuto|  |  |
-        | owner | CharField | ForeignKey(User) | on_delete=models.CASCADE |
+        | owner | ForeignKey | ForeignKey(User) | on_delete=models.CASCADE |
         | created_at | DateTimeField |  | auto_add_now=True |
         | updated_at | DateTimeField |  | auto_add=True |
         | title | CharField |  | max_length=255 |
@@ -57,8 +57,8 @@ This social media app allows users to create an account, connect, and share post
         | name | type | key | other |
         | ---- | ---- | --- | ----- |  
         | id | BigAuto |  |  |  
-        | owner | CharField | ForeignKey(User) | related_name='following', on_delete=models.CASCADE |  
-        | followed | CharField | ForeignKey(User) | related_name='followed', on_delete=models.CASCADE |  
+        | owner | ForeignKey | ForeignKey(User) | related_name='following', on_delete=models.CASCADE |  
+        | followed | ForeignKey | ForeignKey(User) | related_name='followed', on_delete=models.CASCADE |  
         | created_at | DateTimeField |  | auto_now_add=True | 
 
     *   #### Like
@@ -66,8 +66,8 @@ This social media app allows users to create an account, connect, and share post
         | name | type | key | other |
         | ---- | ---- | --- | ----- |
         | id | BigAuto |  |  |
-        | owner | CharField | ForeignKey(User) | on_delete=models.CASCADE |
-        | post | CharField | ForeignKey(Post) | on_delete=models.CASCADE, related_name='likes' |
+        | owner | ForeignKey | ForeignKey(User) | on_delete=models.CASCADE |
+        | post | ForeignKey | ForeignKey(Post) | on_delete=models.CASCADE, related_name='likes' |
         | created_at | DateTimeField |  | auto_now_add=True |
     
     *   #### Comment
@@ -75,8 +75,8 @@ This social media app allows users to create an account, connect, and share post
         | name | type | key | other |
         | ---- | ---- | --- | ----- |
         | id | BigAuto |  |  |
-        | owner | CharField | ForeignKey(User) | on_delete=models.CASCADE |
-        | post | CharField | ForeignKey(Post) | on_delete=models.CASCADE |
+        | owner | ForeignKey | ForeignKey(User) | on_delete=models.CASCADE |
+        | post | ForeignKey | ForeignKey(Post) | on_delete=models.CASCADE |
         | created_at | DateTimeField |  | auto_now_add=True |
         | updated_at | DateTimeField |  | auto_now=True |
         | content | TextField |  |  |
@@ -87,3 +87,4 @@ This social media app allows users to create an account, connect, and share post
 *   Django - REST
 *   [Cloudinary](https://cloudinary.com) -> for images storage
 *   [DBDiagram](https://dbdiagram.io) -> create db diagram
+*   [Heroku](heroku.com) -> django deploy
