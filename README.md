@@ -103,3 +103,13 @@ This social media app allows users to create an account, connect, and share post
         4.   Open the command promp on your computer
         5.   Go to the location where you want the clone to be created
         6.   Type `git clone`, and then paste the URL you copied in Step 3
+        ```$ git clone https://github.com/BogdanCatalin-Iacob/FikaSnap.git```
+        7. Pressing `Enter` on keyboard will create a clone of the repository
+    
+    * #### Forking the Github Repository
+        Forking means making a copy of the original repository on your own GitHub account.
+        This gives you your own version to make changes without affecting the original repository.
+
+        1. Login to GitHub and locate the [GitHub Repository](https://github.com/BogdanCatalin-Iacob/FikaSnap)
+        2. Locate the `Fork` button at the right top of the github page
+        3. Click this to see `Create a new Fork`. Click `Create fork` and you shoud have a copy of the original repository in your GitHub account.
