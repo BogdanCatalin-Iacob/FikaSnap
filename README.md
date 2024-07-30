@@ -9,6 +9,10 @@ This social media app allows users to create an account, connect, and share post
         * [Colour scheme](#colour-scheme)
     * [Database](#database)
         * [User profile model](#user-profile-model)
+    * [Deployment](#deployment)
+        * [Project Creation]
+        * [Deploying to Heroku]
+        * [Local Development]
     
 ## User experience design
 *   ### User stories
@@ -88,3 +92,14 @@ This social media app allows users to create an account, connect, and share post
 *   [Cloudinary](https://cloudinary.com) -> for images storage
 *   [DBDiagram](https://dbdiagram.io) -> create db diagram
 *   [Heroku](heroku.com) -> django deploy
+
+## Deployment
+*   ### Local Development
+    * #### Making A Clone
+        1.   Login to GitHub and locate the [GitHub Repository](https://github.com/BogdanCatalin-Iacob/FikaSnap)
+        2.   Click the <br>![Code](assets\images\github_code_button.png) <br> and then choose your method
+        3.   To clone repository using HTTPS, under the "HTTPS" tab copy the link.
+        You could also choose to open it with Github Desktop, Visual Studio or download it as zip file.
+        4.   Open the command promp on your computer
+        5.   Go to the location where you want the clone to be created
+        6.   Type `git clone`, and then paste the URL you copied in Step 3
