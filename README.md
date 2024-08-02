@@ -150,3 +150,8 @@ This social media app allows users to create an account, connect, and share post
         ```
         $ python manage.py runserver
         ```
+*   ### Remote Deployment
+    The backend of this project was deployed using Heroku.    
+    If you don't have an account you can create one [here](https://dashboard.heroku.com/apps "Heroku").
+
+    <br>
