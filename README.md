@@ -155,3 +155,29 @@ This social media app allows users to create an account, connect, and share post
     If you don't have an account you can create one [here](https://dashboard.heroku.com/apps "Heroku").
 
     <br>
+
+*   ### Deployment to Heroku
+    1. Login to Heroku account
+    2. Create a new app -name must be unique and can be different than your project's name
+    3. Setup the following variables:
+        * DATABASE_URL - See `Setting up your local environment` above
+        * CLOUDINARY_URL - See `Setting up your local environment` above
+        * SECRET_KEY - See `Setting up your local environment` above
+    4. Go to your local clone folder and make sure it has a Procfile containing 
+    ```
+    release: python manage.py makemigrations && python manage.py migrate
+    web: gunicorn fikasnap_api.wsgi
+    ```
+    5. Open `settings.py` in your project and add your Heroku app name to ALLOWED_HOSTS:
+    e.g. `ALLOWED_HOSTS = ['&lt;heroku app name&gt;.heroku.com', 'localhost'].
+    6. Commit chabges to github.
+    7. Go back to Heroku app page and click `Deploy`.
+    8. On Heroku app page, go to `Deployment method` section and choose [Github](https://github.com/).
+    9. A new section will appear called `Connect with Github` giving you an entry box for the repository name to connect to.
+    10. Enter the name of your github project and click `Search`.
+    11. If the repository exists Heroku will list it. Click `Connect`
+    12. Now go down to the next section called `Automatic Deploys`.
+    13. Click `Enable automatic deploys` if you want changes pushed to github to be automatically deployed to Heroku.
+    14. Click `Deploy branch`.
+    You will see the progress bar of the deployment until finally it will say `Your app was successfully deployed`
+    15. Now you can open your live app
