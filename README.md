@@ -113,3 +113,40 @@ This social media app allows users to create an account, connect, and share post
         1. Login to GitHub and locate the [GitHub Repository](https://github.com/BogdanCatalin-Iacob/FikaSnap)
         2. Locate the `Fork` button at the right top of the github page
         3. Click this to see `Create a new Fork`. Click `Create fork` and you shoud have a copy of the original repository in your GitHub account.
+    
+    * #### Setting up local environment
+        1. Open project in a text editor or IDE.
+        2. Createa an `env.py` file. It needs to contain the following:
+            * DATABASE_URL - this can be obtained from the db host of your choice.
+            * SECRET_KEY - This django secretkey for the app. It can be anything you like or use the [django secret key generator](https://djecrety.ir/)
+            * CLOUDINARY_URL = This can be obtained from [Cloudinary](https://cloudinary.com)
+            * DEV - This variable is used for development environment
+        
+        ```
+        import os
+        os.environ["DATABASE_URL"] = 'postgres://xxxxxxxxxxxxxxxxxxxxxxxx'
+        os.environ["SECRET_KEY"] = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        os.environ["Cloudinary_URL"] = 'cloudinary://xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        os.environ["DEV] = '1'
+        ```
+
+        3. Install app requirements
+        ```
+        $ pip install -r requirements.txt
+        ```
+
+        4. Migrate the database models
+        ```
+        $ python manage.py makemigrations
+        $ python manage.py migrate
+        ```
+
+        5. Create a super user and follow instructions
+        ```
+        $ python manage.py createsuperuser
+        ```
+
+        6. Run the app locally
+        ```
+        $ python manage.py runserver
+        ```
