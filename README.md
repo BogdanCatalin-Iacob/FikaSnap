@@ -14,6 +14,7 @@ This social media app allows users to create an account, connect, and share post
         * [Follower model](#follower)
         * [Like model](#like)
         * [Comment model](#comment)
+    * [Technologies](#technologies)
     * [Deployment](#deployment)
         * [Local Development](#local-development)
             * [Making a clone](#making-a-clone)
