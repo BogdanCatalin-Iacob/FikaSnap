@@ -10,9 +10,12 @@ This social media app allows users to create an account, connect, and share post
     * [Database](#database)
         * [User profile model](#user-profile-model)
     * [Deployment](#deployment)
-        * [Project Creation]
-        * [Deploying to Heroku]
-        * [Local Development]
+        * [Local Development](#local-development)
+            * [Making a clone](#making-a-clone)
+            * [Forking the repository](#forking-the-github-repository)
+            * [Local Development](#setting-up-local-environment)
+            * [Remote Deployment](#remote-deployment)
+            * [Deploying to Heroku](#deployment-to-heroku)
     
 ## User experience design
 *   ### User stories
@@ -116,7 +119,7 @@ This social media app allows users to create an account, connect, and share post
     
     * #### Setting up local environment
         1. Open project in a text editor or IDE.
-        2. Createa an `env.py` file. It needs to contain the following:
+        2. Create an `env.py` file. It needs to contain the following:
             * DATABASE_URL - this can be obtained from the db host of your choice.
             * SECRET_KEY - This django secretkey for the app. It can be anything you like or use the [django secret key generator](https://djecrety.ir/)
             * CLOUDINARY_URL = This can be obtained from [Cloudinary](https://cloudinary.com)
