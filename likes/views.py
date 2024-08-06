@@ -5,6 +5,11 @@ from .serializers import LikeSerializer
 
 
 class LikeList(generics.ListCreateAPIView):
+    """
+    List all likes
+    Create a like, i.e. like a user's post.
+    Perform_create: associate the current logged in user with a like.
+    """
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = LikeSerializer
     queryset = Like.objects.all()
