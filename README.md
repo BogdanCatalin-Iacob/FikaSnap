@@ -48,6 +48,14 @@ This social media app allows users to create an account, connect, and share post
     | 14 | User | Logged in user can view the post I liked | Find the posts I enjoy the most |
     | 15 | User | Logged in user can view content filtered by users I follow | Keep up to date with what they are posting |
     | 16 | User | Keep scrolling through the images on the site, loaded automatically | No need to click "Next Page" button |
+    | Detailed Post Page |  |  |  |
+    | 17 | User | Can view posts page | Read the comments about the post |
+    | 18 | Post Owner | Edit my posts title and description | Make correctionsor update my post after it was created |
+    | 19 | User | Logged in user can add comments to a post | Share thoughts about the post |
+    | 20 | User | Can see how long ago a comment was made | Know how old are the comments |
+    | 21 | User | Read the comments on posts | Know what other users think about a specific post |
+    | 22 | Post owner | Delet my comment | Control Removal of my comment from the application |
+    | 23 | Post Owner | Edit my comment | Fix or update my existing comment |
     |  |  |  |  |
 
 
