@@ -42,7 +42,13 @@ This social media app allows users to create an account, connect, and share post
     | 9 | User | Logged in usercan create posts | Share my images with the world |
     | 10 | User | View the details of a single post | Learn more about it |
     | 11 | User | Logged in user can like a post | Show my support for the post that interest me |
-    
+    | Posts page |  |  |  |
+    | 12 | User |View all the most recent posts, ordered by most recently created first | Stay up to date with the newest content |
+    | 13 | User |Search for posts with keywords | Find posts and user profiles I am most interested in |
+    | 14 | User | Logged in user can view the post I liked | Find the posts I enjoy the most |
+    | 15 | User | Logged in user can view content filtered by users I follow | Keep up to date with what they are posting |
+    | 16 | User | Keep scrolling through the images on the site, loaded automatically | No need to click "Next Page" button |
+    |  |  |  |  |
 
 
 *   ### Structure
