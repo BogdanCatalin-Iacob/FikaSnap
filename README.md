@@ -56,7 +56,14 @@ This social media app allows users to create an account, connect, and share post
     | 21 | User | Read the comments on posts | Know what other users think about a specific post |
     | 22 | Post owner | Delet my comment | Control Removal of my comment from the application |
     | 23 | Post Owner | Edit my comment | Fix or update my existing comment |
-    |  |  |  |  |
+    | Profile Page |  |  |  |
+    | 24 | User | View other users profiles | See their post and learn more about them |
+    | 25 | User | See a list of the most followed profiles | See which profiles are popular |
+    | 26 | User | View statistics about a specific user: bio, number of posts, follows and users followed | Learn more about the user |
+    | 27 | User | Logged in user can follow / unfollow other users | See and remove posts by specific users in my posts feed |
+    | 28 | User | View all the posts by a specific user | Catch up on their latest posts or follow them |
+    | 29 | Profile Owner | Logged in user can edit own profile | Change profile picture and bio |
+    | 30 | Profile Owner | Logged in user can update username and password | Change my display name and keep my profile secure |
 
 
 *   ### Structure
