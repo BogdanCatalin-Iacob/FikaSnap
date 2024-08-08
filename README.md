@@ -25,6 +25,21 @@ This social media app allows users to create an account, connect, and share post
     
 ## User experience design
 *   ### User stories
+    As a **(role)** I can **(capability)**, so that **(received benefit)**
+
+    | User story ID | As A/An  | I want to be able | So that I can...  |
+    |---------------|----------|-------------------|-------------------|
+    | Navigation and Authentication|             |           |                   |
+    | 1 | User |  View a navbar from every page | Navigate easeily between pages |
+    | 2 | User | Navigate through pages quickly | View content seamlessly without page refresh |
+    | 3 | User | Create a new account | Access all the features for signed up users |
+    | 4 | User | Sign in to the app | Access functionality for logged in users |
+    | 5 | User | Can see if I'm logged in or not | Login if I need to |
+    | 6 | User | Maintain logged in status until I choose to logout | My user experience is not compromised |
+    | 7 | User | Logged out user can see sign up and sign in options | Sign up / in |
+    | 8 | User | View user avatar | Easily identify users of the application |
+
+
 *   ### Structure
 *   ### Design
     *   #### Colour scheme
