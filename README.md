@@ -38,6 +38,11 @@ This social media app allows users to create an account, connect, and share post
     | 6 | User | Maintain logged in status until I choose to logout | My user experience is not compromised |
     | 7 | User | Logged out user can see sign up and sign in options | Sign up / in |
     | 8 | User | View user avatar | Easily identify users of the application |
+    | Adding and Liking posts |  |  |  |
+    | 9 | User | Logged in usercan create posts | Share my images with the world |
+    | 10 | User | View the details of a single post | Learn more about it |
+    | 11 | User | Logged in user can like a post | Show my support for the post that interest me |
+    
 
 
 *   ### Structure
