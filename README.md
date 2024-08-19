@@ -6,7 +6,6 @@ This social media app allows users to create an account, connect, and share post
     * [User stories](#user-stories)
     * [Structure](#structure)
     * [Design](#design)
-        * [Colour scheme](#colour-scheme)
     * [Database](#database)
         * [User  model](#user-model---django-default)
         * [User profile model](#user-profile-model)
@@ -68,7 +67,7 @@ This social media app allows users to create an account, connect, and share post
 
 *   ### Structure
 *   ### Design
-    *   #### Colour scheme
+
 *   ### Database
     *   #### Database Schema
         *   ![Database Schema](assets\images\db_diagram.png)
