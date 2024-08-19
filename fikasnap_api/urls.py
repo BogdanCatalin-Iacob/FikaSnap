@@ -23,9 +23,11 @@ urlpatterns = [
     path('api-auth', include('rest_framework.urls')),
     # custom logout must be before default to match first
     path("('dj-rest-auth/logout/", logout_route),
-    path('dj-rest-auth/', include('dj_rest_auth.urls')),
-    path('dj-rest-auth/registration/', include(
-        'dj_rest_auth.registration.urls')),
+    path('rest-auth/', include('rest_auth.urls')),
+    # path('dj-rest-auth/', include('dj_rest_auth.urls')),
+    # path('dj-rest-auth/registration/', include(
+    #     'dj_rest_auth.registration.urls')),
+    path('rest-auth/registration/', include('rest_auth.registration.urls')),
     path('', include('profiles.urls')),
     path('', include('posts.urls')),
     path('', include('comments.urls')),

@@ -47,6 +47,7 @@ if 'DEV' not in os.environ:
     ]
 
 REST_USE_JWT = True
+USE_JWT = True
 JWT_AUTH_SECURE = True
 JWT_AUTH_COOKIE = 'my-app-auth'
 JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
@@ -85,11 +86,13 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework.authtoken',
     'dj_rest_auth',
+    'rest_auth',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'dj_rest_auth.registration',
+    # 'dj_rest_auth.registration',
+    'rest_auth.registration',
     'corsheaders',
     'profiles',
     'posts',
