@@ -14,7 +14,7 @@ class Profile(models.Model):
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/',
-        default='../media/images/default_profile_utdxde.jpg'
+        default='default_profile_utdxde.jpg'
     )
 
     class Meta:
